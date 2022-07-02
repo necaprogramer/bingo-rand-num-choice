@@ -1,0 +1,27 @@
+body{
+    background-color: darkgray;
+}
+
+body > #header{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+
+body > #content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: antiquewhite;
+}
+
+body > #content > #how-many-tickets{
+    width: 100px;
+    background-color: aquamarine;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+body > #content > #how-many-tickets:active{
+    opacity: 80%;
+}
