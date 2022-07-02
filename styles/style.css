@@ -8,20 +8,36 @@ body > #header{
     color: aliceblue;
 }
 
-body > #content{
+body > #container > form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: antiquewhite;
+    color: aliceblue;
+    gap: 20px;
 }
 
-body > #content > #how-many-tickets{
+body > #container > form > label{
+    font-size: large;
+}
+
+body > #container > form > #how-many-tickets{
     width: 100px;
     background-color: aquamarine;
     border: 1px solid transparent;
     cursor: pointer;
 }
 
-body > #content > #how-many-tickets:active{
-    opacity: 80%;
+body > #container > form > #how-many-tickets:hover{
+    background-color: aqua;
+}
+
+body > #container > form > #send{
+    font-size: medium;
+    background-color: aquamarine;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+body > #container > form > #send:hover{
+    background-color: aqua;
 }
