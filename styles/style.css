@@ -1,5 +1,5 @@
 body{
-    background-color: darkgray;
+    background-color: darkslategray;
 }
 
 body > #header{
@@ -29,15 +29,28 @@ body > #container > form > #how-many-tickets{
 
 body > #container > form > #how-many-tickets:hover{
     background-color: aqua;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-body > #container > form > #send, #reset{
+body > #container > form > #buttons{
+    display: flex;
+}
+
+body > #container > form > #buttons > #send, #reset{
     font-size: medium;
     background-color: aquamarine;
     cursor: pointer;
     border: 1px solid transparent;
+    border-radius: 3px;
 }
 
-body > #container > form > #send:hover, #reset:hover{
+body > #container > form > #buttons > #send:hover, #reset:hover{
     background-color: aqua;
+    opacity: 90%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+body > #container > #numbers-display > h2{
+    text-align: center;
+    color: aliceblue;
 }
