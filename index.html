@@ -11,9 +11,11 @@
             <h1>Welcome to random generator of numbers for Bingo</h1>
         </div>
         <div id="container">
-            <h2 id="numbers"></h2>
-            <form>
-                <label id="form-header">How many tickets would you like the numbers for?</label>
+            <div id="numbers-display">
+
+            </div>
+            <form id="combination-choice">
+                <label id="form-header">How many combinations would you like the numbers for?</label>
                 <select id="how-many-tickets">
                     <option value="0">1</option>
                     <option value="1">2</option>
@@ -25,6 +27,7 @@
                     <option value="7">8</option>
                 </select>
                 <button id="send">See the combinations</button>
+                <button id="reset">Reset</button>
             </form>
         </div>
     </body>

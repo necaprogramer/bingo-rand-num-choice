@@ -31,13 +31,13 @@ body > #container > form > #how-many-tickets:hover{
     background-color: aqua;
 }
 
-body > #container > form > #send{
+body > #container > form > #send, #reset{
     font-size: medium;
     background-color: aquamarine;
     cursor: pointer;
     border: 1px solid transparent;
 }
 
-body > #container > form > #send:hover{
+body > #container > form > #send:hover, #reset:hover{
     background-color: aqua;
 }

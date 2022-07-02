@@ -7,40 +7,40 @@ let combination1 = [],
     combination7 = [],
     combination8 = [];
 
-let resetNumber = 0;
-
 let select = document.getElementById('how-many-tickets');
 let button = document.getElementById('send');
 
-let combos = document.getElementById('numbers');
+let combos = document.getElementById('numbers-display');
+let numbers = document.createElement('h2');
+combos.appendChild(numbers);
 
 button.addEventListener('click', (e) => {
     e.preventDefault();
     if(select.selectedIndex == 0){
         fillingInCombo(combination1);
-        combos.innerText += combination1; 
+        numbers.innerHTML = `${combination1}`;
     }else if(select.selectedIndex == 1){
         fillingInCombo(combination1);
         fillingInCombo(combination2);
-        combos.innerText += `${combination1}\n ${combination2}`
+        numbers.innerHTML = `${combination1}\n ${combination2}`
     }else if(select.selectedIndex == 2){
         fillingInCombo(combination1);
         fillingInCombo(combination2);
         fillingInCombo(combination3);
-        combos.innerText += `${combination1}\n ${combination2}\n ${combination3}`
+        numbers.innerText = `${combination1}\n ${combination2}\n ${combination3}`
     }else if(select.selectedIndex == 3){
         fillingInCombo(combination1);
         fillingInCombo(combination2);
         fillingInCombo(combination3);
         fillingInCombo(combination4);
-        combos.innerText += `${combination1}\n ${combination2}\n ${combination3}\n ${combination4}`
+        numbers.innerText = `${combination1}\n ${combination2}\n ${combination3}\n ${combination4}`
     }else if(select.selectedIndex == 4){
         fillingInCombo(combination1);
         fillingInCombo(combination2);
         fillingInCombo(combination3);
         fillingInCombo(combination4);
         fillingInCombo(combination5);
-        combos.innerText += `${combination1}\n ${combination2}\n ${combination3}\n ${combination4}\n ${combination5}`
+        numbers.innerText = `${combination1}\n ${combination2}\n ${combination3}\n ${combination4}\n ${combination5}`
     }else if(select.selectedIndex == 5){
         fillingInCombo(combination1);
         fillingInCombo(combination2);
@@ -48,7 +48,7 @@ button.addEventListener('click', (e) => {
         fillingInCombo(combination4);
         fillingInCombo(combination5);
         fillingInCombo(combination6);
-        combos.innerText += `${combination1}\n ${combination2}\n ${combination3}\n ${combination4}\n ${combination5}\n ${combination6}`
+        numbers.innerText = `${combination1}\n ${combination2}\n ${combination3}\n ${combination4}\n ${combination5}\n ${combination6}`
     }else if(select.selectedIndex == 6){
         fillingInCombo(combination1);
         fillingInCombo(combination2);
@@ -57,7 +57,7 @@ button.addEventListener('click', (e) => {
         fillingInCombo(combination5);
         fillingInCombo(combination6);
         fillingInCombo(combination7);
-        combos.innerText += `${combination1}\n ${combination2}\n ${combination3}\n ${combination4}\n ${combination5}\n ${combination6}\n ${combination7}`
+        numbers.innerText = `${combination1}\n ${combination2}\n ${combination3}\n ${combination4}\n ${combination5}\n ${combination6}\n ${combination7}`
     }else if(select.selectedIndex == 7){
         fillingInCombo(combination1);
         fillingInCombo(combination2);
@@ -67,7 +67,7 @@ button.addEventListener('click', (e) => {
         fillingInCombo(combination6);
         fillingInCombo(combination7);
         fillingInCombo(combination8);
-        combos.innerText += `${combination1}\n ${combination2}\n ${combination3}\n ${combination4}\n ${combination5}\n ${combination6}\n ${combination7}\n ${combination8}`
+        numbers.innerText = `${combination1}\n ${combination2}\n ${combination3}\n ${combination4}\n ${combination5}\n ${combination6}\n ${combination7}\n ${combination8}`
     }
 });
 
